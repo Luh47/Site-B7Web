@@ -6,14 +6,39 @@
 
 body {
    
-    height: 100%;  
-    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 100vw;
+}
+.widget {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 100vw;
 }
 
-header {
+
+.geral{
     display: flex;
-    justify-content: center;
-    height: 120px;
+    flex-wrap: wrap;
+    flex: 1 1 100vw;
+}
+
+.zona{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 100vw;
+}
+
+header, nav, main, aside, footer {
+    display: flex;
+   flex-direction:wrap;
+   flex: 1 1 100vw;
+   margin-bottom: 1vh;
+}
+
+
+header {
+    flex: 1 1 100vw; 
 }
 
 .container {
@@ -47,7 +72,7 @@ nav ul {
 }
 
 nav a {
-    padding: 15px;
+   
     text-decoration: none;  
     text-transform: uppercase;
     color: #727272; 
@@ -64,7 +89,7 @@ nav .active  a:hover {
     background-image:url('../imagens/img1.jpg');
     background-position:center;
     background-size:cover;
-    height: 670px;
+   width: 100vw;
 }
 
 .column {
@@ -100,7 +125,6 @@ nav .active  a:hover {
 
 .banner_options {
     width: 950px;
-    height: 230px;
     display:flex;
 }
 
@@ -135,7 +159,7 @@ nav .active  a:hover {
 }
 
 .banner_options a {
-    display: inline-block;
+  
     border: 1px solid #FFF;
     padding: 5px;
     text-decoration: none;
@@ -146,7 +170,7 @@ nav .active  a:hover {
 
 .Off {
     display: flex;
-    flex-direction: row;
+    flex-direction: wrap;
     border-bottom: 1px solid #210a88;
     margin-top: 10px;
     justify-content: space-between;
@@ -192,7 +216,6 @@ h3, span {
 
 .widget-title-bar {
     width:50px;
-    height:3px;
     background-color:#36a9e1;
     margin-top: 10px;
 }
@@ -257,11 +280,15 @@ article .news-thumbnail {
 }
 
 .azulmaril {
+    display: flex;
+    flex-wrap: wrap;
    border: 5px solid #FFF;
    margin-right: 5px;
 }
 
 .news-posted-at {
+    display: flex;
+    flex-wrap: wrap;
     background-color:#2b4c99;
     color:#FFF;
     font-size:12px;
@@ -270,6 +297,8 @@ article .news-thumbnail {
 }
 
 .news-coments {
+    display: flex;
+    flex-wrap: wrap;
     background-color:#39aae1;
     color:#FFF;
     font-size:12px;
@@ -291,6 +320,7 @@ article .news-thumbnail {
 }
 
 footer {
+    flex-wrap: wrap;
     background-color: #1e1e1e;
     display: flex;
     justify-content: center;
@@ -342,9 +372,7 @@ footer .widget-title-text {
 
 .footer-copy {
     border-top: 1px solid #FFF;
-    height:40px;
-    line-height:40px;
-    color:#0079c9;
+   color:#0079c9;
     font-size:12px;
     margin-top:30px;
     flex-wrap: wrap;
